@@ -1,12 +1,12 @@
 .open-sans {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
 }
 
 /* shared styles */
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .text-center {
     text-align: center;
@@ -29,7 +29,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 200px;
+    margin: 0px 200px;
 }
 
 .header {
@@ -133,10 +133,12 @@ main section {
     /* align-items: center; */
     /* justify-items: center; */
 }
-.item-title{
+
+.item-title {
     font-size: 20px;
     font-weight: 600;
 }
+
 .spacing {
     margin: auto 120px;
 }
@@ -193,47 +195,60 @@ main section {
 }
 
 @media screen and (max-width: 576px) {
+
     .skills-container,
     nav,
     .banner,
-    .resume-container{
+    .resume-container {
         flex-direction: column;
     }
-    .banner{
+
+    .banner {
         margin: 0;
     }
-    .banner-greetings{
-        margin: 30px ;
+
+    .banner-greetings {
+        margin: 30px;
     }
-    .banner-title{
+
+    .banner-title {
         margin: 40px;
         font-size: 65px;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
     }
-    .banner-photo{
+
+    .banner-photo {
         width: 93%;
     }
+
     .spacing {
         margin: auto 20px;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         gap: 10px;
         padding: 0;
         align-items: center;
     }
-    .nav-title{
+
+    .nav-title {
         margin: 10px;
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 24px;
         margin: 0;
     }
-    .btn-primary{
-        padding: 10px 15; margin-left: 10px;
+
+    .btn-primary {
+        padding: 10px 15;
+        margin-left: 10px;
     }
+
     .section-title {
         margin: 20px;
     }
@@ -264,10 +279,12 @@ main section {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    .header{
+
+    .header {
         background-image: none;
     }
-    nav{
+
+    nav {
         margin: 0;
     }
 }
